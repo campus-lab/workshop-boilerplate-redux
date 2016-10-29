@@ -1,0 +1,138 @@
+// IMPORTS
+
+@import "vendor/foundation/foundation";
+
+// DEFAULTS
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 6rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin: 0 0 5rem;
+    color: #9C27B0;
+    text-shadow: 4px 4px 0px #E91E63, -4px -4px 0px yellow;
+    text-transform: uppercase;
+}
+
+// STYLES
+
+.app {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('http://wallpapertvs.com/wp-content/uploads/2014/10/cute_goat_baby_animals-1920x1200.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.goat-list {
+    margin: 3rem auto;
+}
+
+.goat-card {
+    overflow: hidden;
+    background: #F3E5F5;
+    border-bottom: 3px solid #9C27B0;
+    margin: 0 0 1rem;
+    border-radius: 10px 50px;
+
+    .goat-card__img {
+        height: 0;
+        padding-bottom: 75%;
+
+        background: url(http://i.imgur.com/HegZkkc.gif);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .goat-card__details {
+        padding: 1rem 2rem;
+
+        h4 {
+            margin: 0;
+            color: darken(#9C27B0, 8%);
+        }
+
+        p {
+            color: #9C27B0;
+        }
+    }
+}
+
+// GOAT TITLE
+
+@function getRGB() {
+    $r: random(256) - 1;
+    $g: random(256) - 1;
+    $b: random(256) - 1;
+    @return rgb($r, $g, $b);
+}
+
+$colors: (getRGB(), getRGB(), getRGB(), getRGB(), getRGB());
+$len: str-length("FUNNY GOATS");
+$wordDuration: .7s;
+$letterDuration: 1.5s;
+$increment: $letterDuration / $len;
+
+@keyframes letterAnim {
+    0% {
+        color: nth($colors, 1);
+    }
+    25% {
+        color: nth($colors, 2);
+    }
+    50% {
+        color: nth($colors, 3);
+    }
+    75% {
+        color: nth($colors, 4);
+    }
+    100% {
+        color: nth($colors, 5);
+    }
+}
+
+.goat-title {
+    display: inline-block;
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    
+    span {
+        color: rgba(0, 0, 0, 0);
+        animation: $letterDuration letterAnim infinite;
+        
+        @for $i from 0 to $len {
+            &.l#{$i} {
+                animation-delay: $i * $increment;
+            }
+        }
+    }
+}

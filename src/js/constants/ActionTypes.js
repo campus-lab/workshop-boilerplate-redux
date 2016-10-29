@@ -1,0 +1,1 @@
+export const GOAT_ADD = 'GOAT_ADD';
