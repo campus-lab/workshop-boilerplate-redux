@@ -57,12 +57,12 @@ const initialState = [
 
 const goats = (state = initialState, action) => {
     switch (action.type) {
-    case 'GOAT_ADD':
-        console.info('reducer cabra :ADD:', state, action);
-        return [...state, action.goat];
-    default:
-        console.info('reducer cabras :DEFAULT:', state);
-        return state;
+        case 'GOAT_ADD':
+            console.info('reducer GOAT_ADD', state, action);
+            return [...state, action.goat];
+        default:
+            console.info('reducer DEFAULT', state);
+            return state;
     }
 };
 
