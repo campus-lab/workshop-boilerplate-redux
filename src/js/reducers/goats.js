@@ -19,7 +19,7 @@ const initialState = [
     },
     {
         url: 'http://www.ourhenhouse.org/wp-content/uploads/2013/06/goat_farm_sanctuary.jpg',
-        displayName: 'Dimitra',
+        displayName: 'Maria Leal',
         description: 'Hey man Goat any grass?',
         published: 1325376000
     },
