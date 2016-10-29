@@ -1,8 +1,8 @@
 # workshop-boilerplate-redux
 
-A simple React+Redux exercice.
+A simple React+Redux workshop exercice.
 
-Slides [here](https://slides.com/guilhermecabral/bmw_v2/live#/).
+[Slides](https://slides.com/guilhermecabral/bmw_v2/live#/).
 
 ## HOW TO 
 
