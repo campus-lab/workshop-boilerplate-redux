@@ -1,6 +1,6 @@
-# Workshop-boilerplate
+# workshop-boilerplate-redux
 
-A simple starter boilerplate for a React+Redux App.
+A simple React+Redux exercice.
 
 Slides [here](https://slides.com/guilhermecabral/bmw_v2/live#/).
 
