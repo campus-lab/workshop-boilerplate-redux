@@ -19,9 +19,8 @@ gulp watch
 + Gulp
     + ```npm install -g gulp```
 
-## BYE BYE
+## MADE WITH ♥
 
-Made with ♥
 + Alexandre Neves ([alexandreneves](https://github.com/alexandreneves))
 + Daniel Rodrigues ([danizep](https://github.com/danizep))
 + Guilherme Cabral ([guivazcabral](https://github.com/guivazcabral))
