@@ -2,7 +2,7 @@
 
 A simple React+Redux workshop exercice.
 
-[Slides](https://slides.com/guilhermecabral/bmw_v2/live#/)
+[Slides](https://slides.com/guilhermecabral/bmw_v2/)
 
 ## HOW TO 
 
