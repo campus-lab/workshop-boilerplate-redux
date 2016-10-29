@@ -12,7 +12,7 @@ npm install
 gulp watch
 ```
 
-## Prerequisites
+## DEPENDENCIES
 
 + NodeJS
     + https://nodejs.org/en/
